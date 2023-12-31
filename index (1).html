@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mike Donnelly - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Mike Donnelly
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          mdonn599@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.giphy.com/media/CS2MR6lBWus4LOpv3D/giphy.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Mike Donnelly <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am a student at the University of North Georgia majoring in Computer Science.
+            I have worked with html, css, and JavaScript in the past working on projects for a web development class I took last semester. 
+            I am an avid student with a strong desire to learn skills that will help me to be successful in the tech industry.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Sql_data_base_with_logo.png"/>
+            <h6>Sql</h6>
+            <p>1 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Python_logo_and_wordmark.svg/729px-Python_logo_and_wordmark.svg.png?20210516005643"/>
+            <h6>Python</h6>
+            <p>1 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="https://media.licdn.com/dms/image/D4D12AQFOFh2Xj1bDBw/article-cover_image-shrink_600_2000/0/1683810512750?e=2147483647&v=beta&t=7TprnllBgKWmm7yKk-OaUcDpg5D-ixYTBHyIv93IJiM"/>
+            <h6>Java</h6>
+            <p>2 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png"/>
+            <h6>CSS</h6>
+            <p>2 years experience</p>
+          </div>
+
+          
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Lexical Analyzer</h3>
+            <ul>
+              <li>Developed a lexical analyzer in java that reads program input from an external file and matches the lexemes to thier corresponding tokens</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Parser</h3>
+            <ul>
+              <li>Developed a parser in java that applies grammar rules to the tokens and ensures that they are syntatically correct</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Online Store</h3>
+            <ul>
+              <li>Created an online store program in java that has basic function such as adding and removing items from the cart, checking the availability of a specific item, etc.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Mike is a highly skilled and diligent professional, consistently delivering exceptional results. A valuable asset, excelling in collaborative environments, and exceeding expectations with expertise and dedication.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          An exceptional individual, displaying remarkable proficiency and adaptability. Consistently impressed with their initiative, problem-solving abilities, and commitment to achieving outstanding outcomes.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Remarkably talented, showcasing unwavering dedication and a keen eye for detail. Their innovative approach and commitment to excellence consistently elevate team performance and project success. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
+
+
